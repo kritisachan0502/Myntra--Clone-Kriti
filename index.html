@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="offer-bar">
+        FLAT 50% OFF ON YOUR FIRST ORDER
+    </div>
+
+    <header class="navbar">
+        <a class="logo" href="#">MYNTRA</a>
+
+        <nav>
+            <a href="#men">MEN</a>
+            <a href="#women">WOMEN</a>
+            <a href="#kids">KIDS</a>
+            <a href="#beauty">BEAUTY</a>
+            <a href="#home">HOME</a>
+        </nav>
+
+        <div class="search-box">
+            <input id="searchInput" type="text"
+                placeholder="Search for products and brands">
+        </div>
+
+        <div class="nav-icons">
+            <a href="#profile">Profile</a>
+            <a href="#wishlist">Wishlist (<span id="wishlistCount">0</span>)</a>
+            <a href="#bag">Bag (<span id="bagCount">0</span>)</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <p>THE BIG FASHION SALE</p>
+            <h1>UP TO 70% OFF</h1>
+            <a href="#products" class="shop-btn">SHOP NOW</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>TOP BRANDS TO EXPLORE</h2>
+        <div class="brands">
+            <div>NIKE</div>
+            <div>ADIDAS</div>
+            <div>PUMA</div>
+            <div>ZARA</div>
+            <div>H&M</div>
+            <div>LEVIS</div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>SHOP BY CATEGORY</h2>
+        <div class="categories">
+            <button class="category-btn" data-category="Women">Women</button>
+            <button class="category-btn" data-category="Men">Men</button>
+            <button class="category-btn" data-category="Kids">Kids</button>
+            <button class="category-btn" data-category="Beauty">Beauty</button>
+            <button class="category-btn" data-category="All">All Products</button>
+        </div>
+    </section>
+
+    <section class="section" id="products">
+        <h2>DEAL OF THE DAY</h2>
+
+        <div class="product-controls">
+            <label for="sortSelect">Sort by:</label>
+            <select id="sortSelect">
+                <option value="default">Recommended</option>
+                <option value="low">Price: Low to High</option>
+                <option value="high">Price: High to Low</option>
+            </select>
+        </div>
+
+        <div class="products" id="productList"></div>
+    </section>
+
+    <section class="section" id="wishlist">
+        <h2>MY WISHLIST</h2>
+        <div class="products" id="wishlistProducts"></div>
+    </section>
+
+    <section class="section" id="bag">
+        <h2>MY SHOPPING BAG</h2>
+        <div id="cartItems"></div>
+        <h3 id="cartTotal">Total: ₹0</h3>
+    </section>
+
+    <footer id="profile">
+        <h3>MYNTRA CLONE</h3>
+        <p>Created using HTML, CSS and JavaScript.</p>
+        <p>Educational college project - 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- Footer -->
+<footer>
+    <h2>MYNTRA CLONE</h2>
+    <p>Created using HTML, CSS and JavaScript.</p>
+    <p>Educational project - 2026</p>
+    <p>© 2026 Myntra Clone Project</p>
+</footer>
